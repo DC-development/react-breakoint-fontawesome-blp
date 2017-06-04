@@ -1,0 +1,20 @@
+@import "../../node_modules/breakpoint-sass/stylesheets/breakpoint";
+@import "../../src/scss/font-awesome-4.7.0/scss/font-awesome";
+
+@import "vars";
+
+
+body {
+	color: $color;
+	.welcome {
+		@include fa-icon(heart);
+	}
+}
+
+
+
+@include breakpoint(max-width $small) {
+	body {
+		color: blue;
+	}
+}

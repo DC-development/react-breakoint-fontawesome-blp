@@ -1,0 +1,23 @@
+{
+  "name": "poppy-react",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "breakpoint-sass": "^2.7.1",
+    "node-sass": "^4.5.0",
+    "react-scripts": "1.0.7"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "css": "node-sass --output-style compact src/scss/main.scss -o public/css",
+    "css:watch": "npm run css && node-sass --output-style compact src/scss/main.scss -wo public/css"
+  }
+}
